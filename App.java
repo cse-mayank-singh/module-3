@@ -1,13 +1,5 @@
-/**
- * 
- */
 package com.capgenimi.java_development.module_3_class_object;
-
-/**
- * 
- */
 public class App {
-
 	/**
 	 * @param args
 	 */
@@ -36,6 +28,27 @@ public class App {
 		
 		//    3 Arrays
 //		Arrays.execution();
-		Stringss.StringExec();
+//		Stringss.StringExec();
+//		ArrayQues.execute();
+//		StringQues.execute();
+		
+		// class type of array;
+//		ClassArray.execute();
+//		Stringss.StringExec();
+//		StringBuffers.execute();
+//		Palindrome.execute();
+		
+		//collections
+//		Collections.List();
+//		Collections.Queue();
+//		Collections.Set();
+//		Collections.Mapp();
+		
+//		Heterogeneous.List();
+//		Heterogeneous.Queue();
+//		Heterogeneous.Set();
+//		Heterogeneous.Mapp();
+		
+		CRUDinCollections.List();
 	}
 }
