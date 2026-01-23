@@ -1,0 +1,18 @@
+| Category       | Collection        | Order Maintained | Sorted   | Duplicates | Null Allowed | Thread-Safe | Internal DS        | Important Methods                                                |
+| -------------- | ----------------- | ---------------- | -------- | ---------- | ------------ | ----------- | ------------------ | ---------------------------------------------------------------- |
+| **List**       | ArrayList         | ✅                | ❌        | ✅          | ✅ (multiple) | ❌           | Dynamic Array      | `add()`, `add(i,e)`, `get(i)`, `set(i,e)`, `remove(i)`, `size()` |
+|                | LinkedList        | ✅                | ❌        | ✅          | ✅            | ❌           | Doubly Linked List | `addFirst()`, `addLast()`, `removeFirst()`, `poll()`, `peek()`   |
+|                | Vector            | ✅                | ❌        | ✅          | ✅            | ✅           | Dynamic Array      | `add()`, `get()`, `capacity()`                                   |
+|                | Stack             | ✅                | ❌        | ✅          | ✅            | ✅           | Vector             | `push()`, `pop()`, `peek()`, `empty()`                           |
+| **Set**        | HashSet           | ❌                | ❌        | ❌          | ✅ (one)      | ❌           | Hash Table         | `add()`, `remove()`, `contains()`                                |
+|                | LinkedHashSet     | ✅ (Insertion)    | ❌        | ❌          | ✅            | ❌           | Hash + Linked List | `add()`, `remove()`, `iterator()`                                |
+|                | TreeSet           | ❌                | ✅        | ❌          | ❌            | ❌           | Red-Black Tree     | `first()`, `last()`, `higher()`, `lower()`                       |
+| **Queue**      | PriorityQueue     | ❌                | Priority  | ❌          | ❌            | ❌           | Heap               | `offer()`, `poll()`, `peek()`                                    |
+|                | ArrayDeque        | ✅                | ❌        | ✅          | ❌            | ❌           | Resizable Array    | `addFirst()`, `addLast()`, `removeFirst()`                       |
+| **Map**        | HashMap           | ❌                | ❌        | ❌ (keys)   | 1 null key    | ❌           | Hash Table         | `put()`, `get()`, `entrySet()`, `keySet()`                       |
+|                | LinkedHashMap     | ✅                | ❌        | ❌          | 1 null key    | ❌           | Hash + Linked List | `put()`, `get()`, `remove()`                                     |
+|                | TreeMap           | ❌                | ✅ (key)  | ❌          | ❌ (key)      | ❌           | Red-Black Tree     | `firstKey()`, `lastKey()`, `higherKey()`                         |
+|                | Hashtable         | ❌                | ❌        | ❌          | ❌            | ✅           | Hash Table         | `put()`, `get()`                                                 |
+| **Concurrent** | ConcurrentHashMap | ❌                | ❌        | ❌          | ❌            | ✅           | Segment Locking    | `putIfAbsent()`, `compute()`, `forEach()`                        |
+| **Iterator**   | Iterator          | —                 | —         | —           | —             | —           | Cursor              | `hasNext()`, `next()`, `remove()`                               |
+|                | ListIterator      | —                 | —         | —           | —             | —           |  Bi-directional     | `previous()`, `add()`, `set()`                                  |

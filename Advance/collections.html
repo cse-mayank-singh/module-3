@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Java Collections – Master Comparison Table</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    th {
+        background: #2c3e50;
+        color: #fff;
+        position: sticky;
+        top: 0;
+    }
+
+    td:first-child {
+        font-weight: bold;
+        background: #ecf0f1;
+        text-align: left;
+    }
+
+    tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Java Collections – Single Master Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+    <th>Feature / Collection</th>
+    <th>ArrayList</th>
+    <th>LinkedList</th>
+    <th>HashSet</th>
+    <th>TreeSet</th>
+    <th>HashMap</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>Underlying Data Structure</td>
+    <td>Dynamic Array</td>
+    <td>Doubly Linked List</td>
+    <td>Hash Table</td>
+    <td>Red-Black Tree</td>
+    <td>Hash Table</td>
+</tr>
+
+<tr>
+    <td>Thread Safe</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+
+<tr>
+    <td>Homogeneous</td>
+    <td>Allowed</td>
+    <td>Allowed</td>
+    <td>Allowed</td>
+    <td>Yes (Comparable)</td>
+    <td>Keys Recommended</td>
+</tr>
+
+<tr>
+    <td>Heterogeneous</td>
+    <td>Allowed</td>
+    <td>Allowed</td>
+    <td>Allowed</td>
+    <td>Not Allowed</td>
+    <td>Values Allowed</td>
+</tr>
+
+<tr>
+    <td>Insertion Order</td>
+    <td>Maintained</td>
+    <td>Maintained</td>
+    <td>Not Maintained</td>
+    <td>Sorted</td>
+    <td>Not Maintained</td>
+</tr>
+
+<tr>
+    <td>Null Allowed</td>
+    <td>Multiple</td>
+    <td>Multiple</td>
+    <td>One</td>
+    <td>No</td>
+    <td>1 Key, Multiple Values</td>
+</tr>
+
+<tr>
+    <td>Duplicates</td>
+    <td>Allowed</td>
+    <td>Allowed</td>
+    <td>Not Allowed</td>
+    <td>Not Allowed</td>
+    <td>Keys Not Allowed</td>
+</tr>
+
+<tr>
+    <td>Create</td>
+    <td>ArrayList&lt;E&gt;()</td>
+    <td>LinkedList&lt;E&gt;()</td>
+    <td>HashSet&lt;E&gt;()</td>
+    <td>TreeSet&lt;E&gt;()</td>
+    <td>HashMap&lt;K,V&gt;()</td>
+</tr>
+
+<tr>
+    <td>Insert</td>
+    <td>add(E), add(int,E)</td>
+    <td>add(E), addFirst(E)</td>
+    <td>add(E)</td>
+    <td>add(E)</td>
+    <td>put(K,V)</td>
+</tr>
+
+<tr>
+    <td>Read</td>
+    <td>get(int), iterator()</td>
+    <td>get(int), peek()</td>
+    <td>iterator(), contains()</td>
+    <td>first(), last()</td>
+    <td>get(K), entrySet()</td>
+</tr>
+
+<tr>
+    <td>Update</td>
+    <td>set(int,E)</td>
+    <td>set(int,E)</td>
+    <td>Not Applicable</td>
+    <td>Not Applicable</td>
+    <td>put(K,newV)</td>
+</tr>
+
+<tr>
+    <td>Delete</td>
+    <td>remove(), clear()</td>
+    <td>remove(), removeFirst()</td>
+    <td>remove(), clear()</td>
+    <td>remove(), clear()</td>
+    <td>remove(K), clear()</td>
+</tr>
+
+</tbody>
+</table>
+
+</body>
+</html>
